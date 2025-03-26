@@ -15,8 +15,8 @@ function xx(kino)
  
 
 
-xx(filmas1)
-xx(filmas2)
-xx(filmas3)
-xx(filmas4)
-xx(filmas5)
+mano(filmas1)
+mano(filmas2)
+mano(filmas3)
+mano(filmas4)
+mano(filmas5)
