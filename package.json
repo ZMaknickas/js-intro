@@ -1,0 +1,23 @@
+{
+  "name": "js-intro",
+  "version": "1.0.0",
+  "description": "pirmoji JS pamoka kaip kurti js file",
+  "main": "index.js",
+  "scripts": {
+    "funkcijuUz": "node --watch ./js/funkcijuUz.js",
+    "vidurkis": "node --watch ./js/vidurkis.js", 
+    "sujungimas": "node --watch ./js/sujungimas.js",
+    "ND": "node ./js/ND.js",
+    "if": "node --watch ./js/if.js",
+    "boolean": "node --watch ./js/boolean.js",
+    "funkcijos": "node --watch ./js/funkcijos.js",
+    "kaita": "node --watch ./js/keitimas.js",
+    "string": "node --watch ./js/2-string.js",
+    "number": "node --watch ./js/1-number.js",
+    "js": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Robotas (https://github.com/ZMaknickas)",
+  "license": "ISC"
+}

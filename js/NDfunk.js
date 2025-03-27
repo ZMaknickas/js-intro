@@ -5,17 +5,14 @@ return
    }
 
 
-function skaitmenys(a) {}
-    if (isNaN(a)) {    
+function skaitmenys(a) {
+    if (typeof(a) !== 'number') {    
     console.log('Pateikta netinkamo tipo reiksme')
-} 
-    else {
-    const ilgis = a.length;
-    }
-    {
-        console.log('Skaitmenu kiekis skaiciuje ' + ilgis);
-    }
-    
+}   
+else { 
+let ilgis = a.toString().length 
+console.log('Skaiciaus ilgis '+ ilgis)}
+}
 
 
 skaitmenys(5)
@@ -28,19 +25,19 @@ skaitmenys('NaN')
 
 
 function didziausiasSkaiciusSarase(skaiciai) {
-let mas = Array.isArray(skaiciai);
-if (mas == false) ; 
-{console.log('Pateikta netinkamo tipo reiksme.')}
-if (skaiciai == ' ');
-{console.log('Pateiktas sarasas negali buti tuscias.')}
-}
-let n = skaiciai.length;
-let max = skaiciai[0]; {
-if (skaiciai[i] > max);
-for (let i=1, i<n, i++) 
-    max = skaiciai[i];}
-{console.log(max)}
-
+   if (Array.isArray(skaiciai) == false) 
+   console.log('Pateikta netinkamo tipo reiksme.')
+   if (skaiciai == ' ')
+   console.log('Pateiktas sarasas negali buti tuscias.')
+let skaiciuKiekis = skaiciai.length;
+for (let i=0; n<skaiciuKiekis; i++)
+   {
+      if (skaiciai[i] > skaiciai[i+1])
+   skaiciai[i] = skaiciai[i+1];
+   }
+   
+    console.log(didziausiasSkaiciusSarase);
+   }
 
 didziausiasSkaiciusSarase([1]) 
 didziausiasSkaiciusSarase([1, 2, 3])
