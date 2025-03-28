@@ -4,6 +4,11 @@
   "description": "pirmoji JS pamoka kaip kurti js file",
   "main": "index.js",
   "scripts": {
+    "typeof": "node --watch ./js/task/typeof.js",
+    "stringreverse2": "node --watch ./js/task/string-reverse2.js",
+    "reversetext": "node --watch ./js/task/reversetext.js",
+    "skaitmenukiekissk": "node --watch ./js/3-skaitmenukiekissk.js",
+    "fornamudarbai": "node --watch ./js/fornamudarbai.js",
     "funkcijuUz": "node --watch ./js/funkcijuUz.js",
     "vidurkis": "node --watch ./js/vidurkis.js", 
     "sujungimas": "node --watch ./js/sujungimas.js",
