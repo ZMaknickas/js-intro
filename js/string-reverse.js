@@ -3,7 +3,7 @@
 
 
 function stringReverse(text) {
-let result=' ';
+let result='';
 
 for (let i = 0; i<=text.length; i++) {
     result += text[text.length - i];

@@ -1,50 +1,46 @@
 
-function tusciaFunkcija() {
-return
-   { console.log(false)}
-   }
+function tusciaFunkcija(a)
+{
+   return 'false';
+} 
+console.log(tusciaFunkcija(['']));
 
-
-function skaitmenys(a) {
-    if (typeof(a) !== 'number') {    
-    console.log('Pateikta netinkamo tipo reiksme')
+function skaitmenys(b) 
+{
+      {if (typeof b === 'string') 
+         return 'Netinkamo tipo reiksme'}
+      {if (typeof b === 'number')     
+      c =b.toString(); 
+      return 'Skaiciaus ilgis '+ c.length;}
+      
 }   
-else { 
-let ilgis = a.toString().length 
-console.log('Skaiciaus ilgis '+ ilgis)}
+
+console.log(skaitmenys(5));
+console.log(skaitmenys(781));
+console.log(skaitmenys(37060123456));
+console.log(skaitmenys('true'));
+console.log(skaitmenys('asd'));
+console.log(skaitmenys('NaN'));
+
+
+function didskait(skaiciai) 
+{
+   if (skaiciai === ' ')
+   return 'Pateiktas sarasas negali buti tuscias.'; 
+   if (typeof skaiciai === 'string') 
+      return 'Pateiktas netinkamo tipo kintamas';
+   if (typeof skaiciai ==='array')
+   for (let i=0; i<skaiciai.length; i++)  
+   if (skaiciai[i] > skaiciai[i+1])
+   return 'Didziausias skaicius sarase '+ skaiciai[i];  
 }
 
-
-skaitmenys(5)
-skaitmenys(781)
-skaitmenys(37060123456)
-skaitmenys('true')
-skaitmenys('asd')
-skaitmenys('NaN')
-
-
-
-function didziausiasSkaiciusSarase(skaiciai) {
-   if (Array.isArray(skaiciai) == false) 
-   console.log('Pateikta netinkamo tipo reiksme.')
-   if (skaiciai == ' ')
-   console.log('Pateiktas sarasas negali buti tuscias.')
-let skaiciuKiekis = skaiciai.length;
-for (let i=0; n<skaiciuKiekis; i++)
-   {
-      if (skaiciai[i] > skaiciai[i+1])
-   skaiciai[i] = skaiciai[i+1];
-   }
-   
-    console.log(didziausiasSkaiciusSarase);
-   }
-
-didziausiasSkaiciusSarase([1]) 
-didziausiasSkaiciusSarase([1, 2, 3])
-didziausiasSkaiciusSarase([ -5, 78, 14, 0, 18])
-didziausiasSkaiciusSarase([69, 69, 69, 69, 66])
-didziausiasSkaiciusSarase([-1, -2, -3, -4, -5, -6, -7, -8 ])
-didziausiasSkaiciusSarase(['pomidoras']);
-didziausiasSkaiciusSarase[('')]
+console.log(didskait([1])); 
+console.log(didskait([1, 2, 3]));
+console.log(didskait([ -5, 78, 14, 0, 18]));
+console.log(didskait([69, 69, 69, 69, 66]));
+console.log(didskait([-1, -2, -3, -4, -5, -6, -7, -8 ]))
+console.log(didskait('pomidoras'));
+console.log(didskait(''));
 
 
