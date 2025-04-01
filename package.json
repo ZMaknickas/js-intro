@@ -4,6 +4,7 @@
   "description": "pirmoji JS pamoka kaip kurti js file",
   "main": "index.js",
   "scripts": {
+    "math": "node --watch ./js/10-math.js",
     "typeof": "node --watch ./js/task/typeof.js",
     "stringreverse2": "node --watch ./js/task/string-reverse2.js",
     "reversetext": "node --watch ./js/task/reversetext.js",
