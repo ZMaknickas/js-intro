@@ -53,6 +53,27 @@ function toliausia(miestas, atstumas, k, j, x) {
     else 
         return 'Nuvaziuoti '+ atstumas +'km truksta pinigu'; 
 }
-
 for (let i=0; i<=19; i+=2) {
     console.log(toliausia(kelias3[i], kelias3[i+1], 50, 1.8, 0.4))}
+/* Susikurkite sąrašą kelio sąlygoms iki kiekvieno miesto apibūdinti (pavyzdžiui:
+geras, prastas, taisomas). Geromis kelio sąlygomis iki miesto važiuojame
+paprastai, prastomis kelio sąlygomis iki miesto važiuojame 1.5 karto ilgiau, o
+taisomo kelio sąlygomis važiuojame 2 kartus ilgiau. Parašykite funkciją, kuri
+pagal kelio sąlygas ir duotus atstumus, parašytų kiek laiko tektų važiuoti iki
+kiekvieno miesto
+*/
+console.log('-----------')
+const kelias4 = ['Marijampole', 130, 'Utena', 100, 'Druskininkai', 137, 'Kaunas', 89, 'Molėtai', 66, 'Palanga', 339, 'Birzai',
+212, 'Trakai', 30, 'Ignalina', 117, 'Rudamina', 19];
+const salygos = ['geras', 'prastas', 'taisomas'];
+function vaziavimas(miestas, atstumas, salygos, greitis) {
+laikas = atstumas/greitis 
+    if (salygos === 'prastas')
+    return laikas*1.5+' '+miestas;
+    if (salygos === 'taisomas')
+    return laikas*2+' '+miestas;
+else return laikas+' '+miestas;
+}    
+for (let i=0; i<19; i+=2) {
+    console.log(vaziavimas(kelias4[i], kelias4[i+1], salygos[1], 95))
+}
