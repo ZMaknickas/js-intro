@@ -102,3 +102,36 @@ console.log('pomidoras'.slice(3));
 console.log('pomidoras'.slice(0, 3));
 console.log('pomidoras'.slice(3, -3));
 console.log('pomidoras'.slice(-3));
+
+// trim
+console.log('\ntrim');
+
+console.log(`"${'pomidoras'.trim()}"`);
+console.log(`"${'        pomidoras'.trim()}"`);
+console.log(`"${'pomidoras    '.trim()}"`);
+console.log(`"${'   pomidoras'    .trim()}"`);
+console.log(`"${'  labas  rytas    Lietuva   rytas  '.trim()}"`);
+
+// split
+console.log('\nsplit');
+
+const t1='zodis';
+const t1Parts = t1.split();
+const t1Parts2 = t1.split('o');
+const t1Parts3 = t1.split('d');
+
+console.log(t1Parts);
+console.log(t1Parts2);
+console.log(t1Parts3);
+
+ // charCodeAt
+console.log('\ncharCodeAt');
+console.log(a.charCodeAt)
+
+if ('A' > 'a') {
+    console.log('daugiau');
+}   else {
+    console.log('maziau');
+}
+
+/// String.fromCharCode(65) grazina simboli is to numerio lenteleje.
