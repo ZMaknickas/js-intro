@@ -67,13 +67,34 @@ const kelias4 = ['Marijampole', 130, 'Utena', 100, 'Druskininkai', 137, 'Kaunas'
 212, 'Trakai', 30, 'Ignalina', 117, 'Rudamina', 19];
 const salygos = ['geras', 'prastas', 'taisomas'];
 function vaziavimas(miestas, atstumas, salygos, greitis) {
-laikas = atstumas/greitis 
+n = atstumas/greitis
     if (salygos === 'prastas')
-    return laikas*1.5+' '+miestas;
+    return n*1.5+' '+miestas;
     if (salygos === 'taisomas')
-    return laikas*2+' '+miestas;
-else return laikas+' '+miestas;
+    return n*2+' '+miestas;
+else return n+' '+miestas;
 }    
 for (let i=0; i<19; i+=2) {
-    console.log(vaziavimas(kelias4[i], kelias4[i+1], salygos[1], 95))
+    console.log(vaziavimas(kelias4[i], kelias4[i+1], salygos[1], 89))
 }
+console.log('-----------')
+/*
+kiek sveikųjų teigiamų skaičių sąraše yra tam tikrų
+skaičių ir išvestų resultatą grafiškai. 
+PVZ: turint sąrašą [1, 1, 2, 3, 3, 3, 4] 
+*/
+const lyg=[2, 4, 2, 2, 1, 1 ,-1];
+let l=0;
+function vienodi(a, b) {
+    if (a === b && b>=0 && b%1===0)
+    l+=1;
+    return 'vienodi='+l; 
+}
+
+
+for (let i=0; i<=lyg.length; i++) {
+for (let j=i; j<lyg.length; i++) 
+console.log(vienodi(lyg[i], lyg[j]))
+}
+
+
