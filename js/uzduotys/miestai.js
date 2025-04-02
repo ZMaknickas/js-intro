@@ -4,18 +4,21 @@ atstumai iki Vilniaus ([‘Kaunas’, 89.6, ‘Klaipėda’, 307.3, … ).
 km/h greičiu per y valandų.
 */
 
-let kelias = ['Kaunas', 89, 'Marijampole', 130, 'Utena', 100, 'Druskininkai', 137, 
-    'Molėtai', 66, 'Palanga', 339, 'Birzai',  212, 'Trakai', 30, 'Ignalina', 117, 'Rudamina', 19];
-
-function kelione(gr, laik) {
-    let a = 0;
-    a = gr*laik;
-    for (let i=1; i<=15; i+=2)
-    sk1= a - kelias[i];
-    for (let i=3; i<=17; i+=2)
-    sk2= a - kelias[i];
-    if (sk1>0 && sk2>0 && sk1<sk2)    
-    return 'Tolimiausias miestas, kuri galima pasiekti'+gr+'greiciu'+'per'+laik+'valandu'+ kelias[i];
+        
+const kelias = ['Marijampole', 130, 'Utena', 100, 'Druskininkai', 137, 'Kaunas', 89, 'Molėtai', 66, 'Palanga', 339, 'Birzai',
+      212, 'Trakai', 30, 'Ignalina', 117, 'Rudamina', 19];
+function kelione(miestas, atstumas, laikas) {
+    let x = 80;
+    let kelione = x*laikas;    
+    if (kelione>=atstumas)
+        return miestas;
+    else 
+    return 'kitur nenuvaziuosime';
 }
 
-console.log(kelione(80, 2));
+for (let i=0; i<=19; i+=2) {
+console.log(kelione(kelias[i], kelias[i+1], 1.5))}
+
+//Parašykite funkciją, kuri pasakytų, ar spėtume pasiekti norimą miestą per x
+//valandų ir kokiu greičiu turėtume važiuoti? (padarykite limitą 120 km/h)
+
