@@ -44,12 +44,21 @@ for (let i=2; i<=20; i++) {
 
 console.log('--------' + 'fibonnacci'+'-------');
 
-let sum = 0;
-for (let i=1; i<10; i++) 
-    {
-    console.log(sum+=sum2*i);     
-}
-
+let xf = 1;
+let y = 2; 
+let z = 0;
+for (let i = 1; i <= 10; i++) {
+    if (i === 1) {
+        console.log(xf);
+    } else if (i === 2){
+        console.log(y)
+         } else {
+            z = xf + y;
+            xf = y;
+            y = z;
+            console.log(z);
+            }
+        }
 
 const x= 6;
 console.log('daugyba') 

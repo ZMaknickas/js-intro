@@ -83,7 +83,8 @@ kiek sveikųjų teigiamų skaičių sąraše yra tam tikrų
 skaičių ir išvestų resultatą grafiškai. 
 PVZ: turint sąrašą [1, 1, 2, 3, 3, 3, 4] 
 */
-const lyg=[2, 4, 2, 2, 1, 1 ,-1];
+
+/*const lyg=[2, 4, 2, 2, 1, 1 ,-1];
 let l=0;
 function vienodi(a, b) {
     if (a === b && b>=0 && b%1===0)
@@ -96,5 +97,50 @@ for (let i=0; i<=lyg.length; i++) {
 for (let j=i; j<lyg.length; i++) 
 console.log(vienodi(lyg[i], lyg[j]))
 }
+*/
 
+// 3.Susikurkite 7 sarasus, 
+// kuriose yra talpinamos skirtingu dienu temperaturos vertes.
+console.log('-----------')
+const d1 = [3.5, 4, 6, 3, 0];
+const d2 = [10, 12, 15, 14, 8];
+const d3 = [8, 9, 13, 16, 6];
+const d4 = [-1, 2, 4, -2, -2];
+const d5 = [15, 16, 18, 22, 14];
+const d6 = [2, 4, 6, 8, 5];
+const d7 = [7, 10, 14, 13, 10];
 
+// a. Vidutine dienos
+function vidutine(day) {
+    average = sum/day.length;
+    return average+' vidutine ketv dienos temperatura';
+}
+let sum=0;
+for (let i=0; i<5; i++) {
+    sum+=d4[i];   
+}    
+console.log(vidutine(d4));
+console.log('---------')
+// b. Auksciausia dienos
+
+/*
+function auksciausia(day) {
+let biggest= -Infinity
+for (let i = 0; i < day.length; i++){ 
+ if (day[i] > biggest) 
+    biggest = day[i];
+}
+}
+return biggest+' penktos dienos temperatura.';
+
+console.log(auksciausia(d5));
+*/
+    function auksciausia(day) {
+    let biggest= -Infinity;
+    for (let i = 0; i < day.length; i++) 
+    if (day[i] > biggest) {
+    biggest = day[i];
+}
+    return biggest+' penktos dienos temperatura.';
+}
+    console.log(auksciausia(d5))
