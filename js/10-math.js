@@ -64,3 +64,51 @@ console.log(Math.pow(2, 9));
 console.log(Math.pow(2,10));  
 
 // sign
+// random [0..1)
+console.log('\nrandom');
+console.log(Math.random());
+
+// Random skaicius: 3 arba 7
+// [0..1) = [0 .. 0.5) + [0.5 .. 1)
+
+let count3= 0;
+let count7= 0;
+
+for (let i = 0; i < 1000000; i++)
+{    
+    if (Math.random()< 0.5) {
+        count3++;
+    } else {
+        count7++;
+    }
+}
+
+console.log(count3, count7);
+// [13..149]
+function randomnumber(min, max) {
+    return Math.floor(Math.random() * (ma-min+1) + min);
+}
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+console.log(randomNumber(1,10));
+
+const count = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+for (let i=0; i<1000000; i++) {
+    console.log(randomNumber(0, 9));
+    counts[index]++;
+}
+
+console.log(count);
+
+const counts2 = [0, 0];
+
+for (let i=0; i<10; i++) {
+    console.log(randomNumber(0, 1));
+    counts[index]++;
+}
+
+console.log(counts2);

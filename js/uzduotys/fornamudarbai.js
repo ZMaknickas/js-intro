@@ -42,14 +42,21 @@ for (let i=2; i<=20; i++) {
         } 
 }
 
-console.log(1,1,2,3,5,8,13,21,24,45);
+console.log('--------' + 'fibonnacci'+'-------');
+
+let sum = 0;
+for (let i=1; i<10; i++) 
+    {
+    console.log(sum+=sum2*i);     
+}
+
 
 const x= 6;
 console.log('daugyba') 
     for (let i=1; i<=10; i++) 
     {
         console.log(`${i} * ${x}=${i * x}`);
-    }   
+    }
 
 //Sukurkite for ciklą, kuris spausdina skaičius nuo 1 iki 30,
 //  bet tik tuos, kurie dalijasi iš 2 arba 3.

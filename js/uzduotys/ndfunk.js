@@ -30,10 +30,19 @@ function didskait(skaiciai)
    if (typeof skaiciai === 'string') 
       return 'Pateiktas netinkamo tipo kintamas';
    if (typeof skaiciai ==='array')
-   for (let i=0; i<skaiciai.length; i++)  
-   if (skaiciai[i] > skaiciai[i+1])
-   return 'Didziausias skaicius sarase '+ skaiciai[i];  
+      if (array.length === 1)
+         return skaiciai[0];
+   let biggest = -Infinity;
+   for (let i = 0; i < skaiciai.length; i++) {
+         }
+          if (skaiciai[i] > biggest) {
+              biggest = skaiciai[i];
+         }
 }
+  
+      return biggest;
+      
+  
 
 console.log(didskait([1])); 
 console.log(didskait([1, 2, 3]));
@@ -42,5 +51,4 @@ console.log(didskait([69, 69, 69, 69, 66]));
 console.log(didskait([-1, -2, -3, -4, -5, -6, -7, -8 ]))
 console.log(didskait('pomidoras'));
 console.log(didskait(''));
-
 
