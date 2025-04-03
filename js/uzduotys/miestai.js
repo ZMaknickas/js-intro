@@ -102,13 +102,21 @@ console.log(vienodi(lyg[i], lyg[j]))
 // 3.Susikurkite 7 sarasus, 
 // kuriose yra talpinamos skirtingu dienu temperaturos vertes.
 console.log('-----------')
+let list = [];
 const d1 = [3.5, 4, 6, 3, 0];
+list.push(d1);
 const d2 = [10, 12, 15, 14, 8];
+list.push(d2);
 const d3 = [8, 9, 13, 16, 6];
+list.push(d3);
 const d4 = [-1, 2, 4, -2, -2];
+list.push(d4);
 const d5 = [15, 16, 18, 22, 14];
+list.push(d5);
 const d6 = [2, 4, 6, 8, 5];
+list.push(d6);
 const d7 = [7, 10, 14, 13, 10];
+list.push(d7);
 
 // a. Vidutine dienos
 function vidutine(day) {
@@ -122,19 +130,6 @@ for (let i=0; i<5; i++) {
 console.log(vidutine(d4));
 console.log('---------')
 // b. Auksciausia dienos
-
-/*
-function auksciausia(day) {
-let biggest= -Infinity
-for (let i = 0; i < day.length; i++){ 
- if (day[i] > biggest) 
-    biggest = day[i];
-}
-}
-return biggest+' penktos dienos temperatura.';
-
-console.log(auksciausia(d5));
-*/
     function auksciausia(day) {
     let biggest= -Infinity;
     for (let i = 0; i < day.length; i++) 
@@ -144,3 +139,54 @@ console.log(auksciausia(d5));
     return biggest+' penktos dienos temperatura.';
 }
     console.log(auksciausia(d5))
+
+// b. Zemiausia dienos
+function zemiausia(day) {
+    let lowest= Infinity;
+    for (let i = 0; i < day.length; i++) 
+    if (day[i] < lowest) {
+    lowest = day[i];
+}
+    return lowest+' penktos dienos temperatura.';
+}
+    console.log(zemiausia(d5))
+    console.log('-------');
+
+// Parašykite funkcija, kuriai davus visas savaites dienas, 
+// ji suranda kuria diena buvo žemiausia temperatura, 
+// ir kuria diena buvo aukščiausia temperatura.
+
+
+/* parasykite funkcija kuri apskaiciuotu 
+visos savaites vidutine temperatura
+*/
+console.log('\n3.euzduotis')
+vidutineS=0;
+const d8 = [];
+for (let i=0; i<d1.length; i++) {
+    d8.push(d1[i]);
+}
+for (let i=0; i<d2.length; i++) {
+    d8.push(d2[i]);
+}
+for (let i=0; i<d3.length; i++) {
+    d8.push(d3[i]);
+}
+for (let i=0; i<d4.length; i++) {
+    d8.push(d4[i]);
+}
+for (let i=0; i<d5.length; i++) {
+    d8.push(d5[i]);
+}
+for (let i=0; i<d6.length; i++) {
+    d8.push(d6[i]);
+}
+for (let i=0; i<d4.length; i++) {
+    d8.push(d7[i]);
+}
+for (let i=0; i<d8.length; i++) {
+vidutineS +=d8[i];
+vidutineV = vidutineS/d8.length;
+t=vidutineV.toFixed(2);
+}
+console.log('Savaites vidutine t: '+t);
