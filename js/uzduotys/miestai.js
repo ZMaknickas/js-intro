@@ -190,3 +190,42 @@ vidutineV = vidutineS/d8.length;
 t=vidutineV.toFixed(2);
 }
 console.log('Savaites vidutine t: '+t);
+
+/* Parašyk(ite funkcija, kuri nurodzius viena diena ir 
+tos dienos krituliu kiekį, funkcija pranestu, kaip
+siuloma apsirwngti. */
+('\nkaipapsirengti')
+oras1 = ['debesuota', 10];
+oras2=['sauleta', -2];
+oras3=['debesuota',-10];
+oras4=['sauleta', 5];
+oras5=['sauleta', 15];
+oras6=['debesuota', 18];
+oras7=['sauleta', 23];
+
+function rubai(diena, oras) {
+    if (oras[0]==='sauleta' && oras[1]>=20)
+        items=oras[0]+'silta - pasitepti saules kremu, akiniai nuo saules.';
+    if (oras[0]==='debesuota' && oras[1]>=20)
+        items=oras[0]+'silta, lis -pasiimti sketi.';
+    if (oras[0]==='sauleta' && oras[1]<=20)
+        items=oras[0]+' nesalta, nelis.';
+    if (oras[0]==='debesuota' && oras[1]<=20)
+        items=oras[0]+' nesalta, lis - pasiimti sketi.';
+    if (oras[0]===' sauleta' && oras[1]<=10)
+        items=oras[0]+' nesalta, nelis- apsirengti striuke.';
+    if (oras[0]==='debesuota' && oras[1]<=10)
+        items=oras[0]+' nesalta, lis - apsirengti striuke, pasiimti sketi.'
+    if (oras[0]==='sauleta' && oras[1]<=0)
+        items=oras[0]+' salta, nesnigs - apsirengti silciau.'
+    if (oras[0]==='debesuota' && oras[1]<=0)
+        items=oras[0]+' salta, snigs - pasiimti morka sniego seniui lipdyti.'
+    return console.log(diena+' '+items);
+}
+
+rubai('pirmadienis', oras1)
+rubai('antradienis', oras3)
+rubai('ketvirtadienis', oras4)
+rubai('sestadienis', oras6)
+rubai('sekmadienis', oras7)
+
