@@ -38,6 +38,7 @@ else {
 // vis objektai yra pozityvus.
 // undefined - false.
 // null - false.
+
 console.clear()
 
 const a= 0 ? 1 : 2;

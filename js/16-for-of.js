@@ -15,11 +15,11 @@ for (const mark of marks) {
 
 console.log(sum2);
 
-const name= ['Jonas', 'Petras', 'Maryte'];
+const names= ['Jonas', 'Petras', 'Maryte'];
 const nameSizes = [];
 
 for (const name of names) {
-    const name = nameSizes.push(name) ({
+    const name = nameSizes.push(names) ({
         name: name,
         firstletter : name.at[-1],
         size:name.length,

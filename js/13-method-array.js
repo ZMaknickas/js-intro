@@ -41,7 +41,7 @@ console.log(n12);
 
 
 // push(name.toUppercase()
-console.clear();
+
 const numbers2 =[10, 2, 8, 4, 6] 
 numbers2.push(9);
 console.log(numbers2);
@@ -98,18 +98,18 @@ console.log(c123);
 const c1234 = c1.concat(c2, c3, c4);
 console.log(c1234);
 
-console.clear();
-
 const h = [11, 22, 33, 44, 55];
 console.log(h);
 
+//1.The first argument is the index of the 
+// element you want to remove.
+//2. The second argument is the number
+//  of elements to remove (1 means remove one element).
 h.splice(1);
 console.log(h)
 
 h.splice(0, 3);
 console.log(h);
-
-console.clear()
 
 // MAP 
 const k = [10, 2, 8, 4, 6];
