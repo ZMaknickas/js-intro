@@ -1,8 +1,12 @@
-function removeEveryOther(arr){
-  result=[];
-  for (let i=0; i<arr.length; i+=2){
-  result.push(arr[i])}
-  return result;
-  }
-  
-console.log(removeEveryOther(['x', 'o', 'x']))
+function difference(ages) {
+let res= [];
+let did= Math.max(...ages);
+res.push(did);
+let maz= Math.min(...ages);
+res.push(maz);
+let dif=did-maz;
+res.push(dif);
+return res;
+}
+
+console.log(difference([3, 41, 45, 68, 70]));
