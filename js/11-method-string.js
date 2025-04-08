@@ -114,7 +114,7 @@ console.log(`"${'  labas  rytas    Lietuva   rytas  '.trim()}"`);
 
 // split
 console.log('\nsplit');
-
+// gauname masyva
 const t1='zodis';
 const t1Parts = t1.split();
 const t1Parts2 = t1.split('o');
@@ -125,8 +125,10 @@ console.log(t1Parts2);
 console.log(t1Parts3);
 
  // charCodeAt
-console.log('\ncharCodeAt');
-console.log(a.charCodeAt)
+console.log('\ncharCode');
+
+console.log(x('z'))
+
 
 if ('A' > 'a') {
     console.log('daugiau');
