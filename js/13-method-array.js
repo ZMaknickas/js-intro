@@ -190,3 +190,28 @@ console.log(update);
 
 const update2=text5.filter(t=> t.length>0);
 console.log(update2);
+
+//fill
+const default50=[0,0,0,0,0];
+
+const default7 = Array(7).fill(99);
+console.log(default7)
+
+const demo=[10, 2, 8, 4, 6];
+
+demo.fill(777);
+console.log(demo);
+
+//every
+const trees = ['uosis', 'egle', 'azuolas', 'tuopa'];
+const allTreesValid=trees.every(s => s.length>5);
+console.log(allTreesValid);
+//grazina reiksme true or false
+
+// some
+const someTreesValid2=trees.some(s => s.length>5);
+console.log(someTreesValid2);
+
+const someTreesValid=trees.some(s => s.length===5);
+console.log(allTreesValid);
+
