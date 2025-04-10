@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
     "fibonaci": "node --watch ./js/uzduotys/cwfibonnacci.js",
+    "switch": "node --watch ./js/22-switch.js",
+    "sort": "node --watch ./js/19-sort.js",
+    "restr": "node --watch ./js/21-restrukturizavimas-rest.js",
+    "reduce": "node --watch ./js/20-reduce.js",
     "for-of": "node --watch ./js/16-for-of.js",
     "for-in": "node --watch ./js/18-for-in.js",
     "while": "node --watch ./js/17-while.js",
@@ -14,7 +18,7 @@
     "miestai": "node --watch ./js/uzduotys/miestai.js",
     "getsum": "node --watch ./js/getsum.js",
     "forai": "node --watch ./js/uzduotys/foruzdaviniai1.js",
-    "metodarai": "node --watch ./js/13-method-array.js",
+    "metodarray": "node --watch ./js/13-method-array.js",
     "money": "node --watch ./js/uzduotys/money-formatas.js",
     "numbermethod": "node --watch ./js/12-method-number.js",
     "methodstring": "node --watch ./js/11-method-string.js",
@@ -39,6 +43,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "Robotas (https://github.com/ZMaknickas)",
+  "author": "webz (https://github.com/ZMaknickas)",
   "license": "ISC"
 }
