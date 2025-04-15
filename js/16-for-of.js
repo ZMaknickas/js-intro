@@ -23,7 +23,7 @@ for (const name of names) {
         name: name,
         firstletter : name.at[-1],
         size:name.length,
-        reverse: name.split('').reverse().join(''),
+        reverse: name.split('').reverse(1).join(''),
     });
 }
 

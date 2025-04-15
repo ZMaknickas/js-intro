@@ -19,9 +19,9 @@ const multi = function (a, b) {
 }
 console.log(`${n1}*${n2} = ${multi(n1,n2)}`);
 
-//3a) arroe function
+//3a) arrow function
 //jei logikos bloke yra tik viena salyga 
-//teai galima nerasyti {return}
+//tai galima nerasyti {return}
 const div = (a,b) => a/b;
 console.log(`${n1}/${n2} = ${div(n1,n2)}`);
 

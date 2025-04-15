@@ -17,71 +17,71 @@ Aritmetiniai priskyrimo operatoriai: +=, -=, *=, /=,
 
 */
 
-const a = 1
-console.log(a)
+const a = 1;
+console.log(a);
 
-const b = 2
-console.log(b)
+const b = 2;
+console.log(b);
 
-const c = a + b
-console.log(c)
+const c = a + b;
+console.log(c);
 
-const luckyNumber = 777
-console.log(luckyNumber)
+const luckyNumber = 777;
+console.log(luckyNumber);
 
-const n1 = 7 + 5
-console.log(n1)
+const n1 = 7 + 5;
+console.log(n1);
 
-const x = 7 % 5
-console.log(x)
+const x = 7 % 5;
+console.log(x);
 
-console.log('___________')
+console.log('___________');
 
-const age = 99
-console.log(age)
+const age = 99;
+console.log(age);
 
-let agex = age + 1
-console.log('amzius', age+1)
+let agex = age + 1;
+console.log('amzius', age+1);
 
-let pi = 3.1415192654
-
-
-let sum = 10
-console.log(sum)
-
-sum = sum + 5
-console.log(sum)
-
-sum = sum + 5
-console.log(sum)
-
-sum = sum / 4
-console.log(sum)
-
-let sum2 = 10
-console.log(sum2)
+let pi = 3.1415192654;
 
 
-console.log(Infinity)
-console.log(-Infinity)
-console.log(Infinity+1)
-console.log(Infinity/2)
-console.log(1 **0 )
-console.log(2 **0 )
-console.log(3 **0 )
-console.log(23445 **1 )
+let sum = 10;
+console.log(sum);
 
-console.log('dalyba is nulio')
+sum = sum + 5;
+console.log(sum);
 
-console.log(5/0) 
-console.log(0/0)
+sum = sum + 5;
+console.log(sum);
 
-console.clear()
+sum = sum / 4;
+console.log(sum);
 
-console.log('kvadratine saknis')
-console.log(81**(1/2))
-console.log(9**(1/2))
+let sum2 = 10;
+console.log(sum2);
 
-console.log('kubibne')
-console.log(27**(1/3))
+
+console.log(Infinity);
+console.log(-Infinity);
+console.log(Infinity+1);
+console.log(Infinity/2);
+console.log(1 **0 );
+console.log(2 **0 );
+console.log(3 **0 );
+console.log(23445 **1 );
+
+console.log('dalyba is nulio');
+
+console.log(5/0); 
+console.log(0/0);
+
+//console.clear()
+
+console.log('kvadratine saknis');
+console.log(81**(1/2));
+console.log(9**(1/2));
+
+console.log('kubine');
+console.log(27**(1/3));
 

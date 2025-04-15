@@ -65,3 +65,6 @@ switch (stop) {
     break;
 }
 console.log(stop);
+
+//default grazina reiksme, jei netinka nei vienas case.
+//return const= day3name => 

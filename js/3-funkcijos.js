@@ -20,7 +20,7 @@ const d = hi();
 console.log(d);
 
 //Jonas Labas, Jonas
-//Maryte Lbas, Maryte!
+//Maryte Labas, Maryte!
 //Petras Labas, Petras!
 
 function hiPerson(name){
@@ -75,7 +75,7 @@ console.log(p3);
 
 function nameLength(name) {
     const size = name.length;
-    return `Zodis "${name}" yra sudarytas is ${size} raidziu`;
+    return `Zodis ${name} yra sudarytas is ${size} raidziu`;
 }
 
 const nl1= nameLength('Jonas');
@@ -107,7 +107,7 @@ console.log(gn3);
 // 7, 5    ->  7 + 5 = 12
 // -7, 25  ->  -7 + 25 = 8
 
-function sum(a, b){
+function sum(a, b) {
 return a + b;
 }
 

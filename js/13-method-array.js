@@ -135,7 +135,7 @@ const k2= [];
  const k5 = k.map(n=> n*5);
  console.log(k5);
 
- const k6 = k.map(n=> n);
+ const k6 = k.map(n=> n*6);
  console.log(k6);
 
  const k7 = k.map(n=> n+1);

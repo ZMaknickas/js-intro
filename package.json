@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "fibonaci": "node --watch ./js/uzduotys/cwfibonnacci.js",
+    "upper": "node --watch ./js/uppercase.js",
     "switch": "node --watch ./js/22-switch.js",
     "sort": "node --watch ./js/19-sort.js",
     "restr": "node --watch ./js/21-restrukturizavimas-rest.js",

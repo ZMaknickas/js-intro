@@ -31,7 +31,7 @@ const obj = {
     name:'Maryte',
 };
 console.log(obj);
-// overridinti sukurta ojrkta
+// overridinti sukurta ojekta
 //pridedamas key ir reiksme.
 obj.age=88;
 console.log(obj);
