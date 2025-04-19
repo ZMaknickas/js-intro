@@ -127,6 +127,9 @@ console.log(t1Parts3);
  // charCodeAt
 console.log('\ncharCode');
 
+function x(s) {
+return s.charCodeAt(0);    
+}
 console.log(x('z'))
 
 
@@ -137,3 +140,6 @@ if ('A' > 'a') {
 }
 
 /// String.fromCharCode(65) grazina simboli is to numerio lenteleje.
+let f='777';
+let nmb=+(x);
+ console.log(nmb);
