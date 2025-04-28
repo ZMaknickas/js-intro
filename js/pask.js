@@ -1,5 +1,5 @@
 console.log('IIIIIIIIIIIIIIIIIIIIIIIIIIII');
-let men=10000;
+let men=100;
 let result=0;
 let count=0;
 let result2=0;
@@ -60,3 +60,10 @@ let m=1000000/(all*12);
 console.log(m.toFixed(1));
 let best=wg.sort((a,b)=>a-b);
 console.log(best);
+
+function hm(flow) {
+const s=flow.reduce((total,a)=> total+a)
+let long=100000/(s*12);
+return Math.floor(long), Math.floor(12*(long%12));
+}
+console.log(hm(600, 600, 500, 1000))
