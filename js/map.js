@@ -11,4 +11,5 @@ console.log(sum2);
 let gg='2300';
 console.log(gg);
 console.log(+gg);
-pl
+console.clear();
+function 

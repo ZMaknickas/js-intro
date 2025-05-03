@@ -35,7 +35,8 @@ Github [mano profils] https://github.com/ZMaknickas
 ![alt text]![alt text](20240815_144034.jpg)
 ![alt text](IMG_0417.JPG)
 ![alt text](IMG_0388.JPG)
-Geriausios suns veisles pasaulyje - 
+Kitos veisles- 
 
 - **BOREDERIS;**
 - **VOKIECIU AVIGANIS;**
+*LABRADORAI;*

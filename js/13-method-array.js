@@ -45,7 +45,7 @@ console.log(n12);
 const numbers2 =[10, 2, 8, 4, 6] 
 numbers2.push(9);
 console.log(numbers2);
-
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~');
 const g1 = numbers.pop();
 const g2 = numbers2.pop();
 console.log(numbers2, g1, g2);
@@ -58,7 +58,7 @@ console.log(numbers2);
 const g3 = numbers2.shift();
 const g4 = numbers2.shift();
 console.log(numbers2, g3, g4);
-console.clear()
+
 
 const magic= [11, 22, 33, 44, 55];
 console.log(magic.includes(5));
@@ -73,13 +73,12 @@ const texts= ['agurkas', 'pomidoras', 'svogunas', 'paprika'];
 const products = `Reikalingi produktai: ${texts.join(', ')}.`;
 console.log(products);
 
-console.clear();
 console.log(texts);
 texts.reverse();
 console.log();
 console.log(texts);
 
-console.clear()
+
 
 const c1 = [1,11];
 const c2 = [1,11];

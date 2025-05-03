@@ -61,9 +61,18 @@ console.log(m.toFixed(1));
 let best=wg.sort((a,b)=>a-b);
 console.log(best);
 
-function hm(flow) {
-const s=flow.reduce((total,a)=> total+a)
-let long=100000/(s*12);
-return Math.floor(long), Math.floor(12*(long%12));
+
+
+console.clear();
+console.log(4+"2");
+function test(){
+  let x=10;
 }
-console.log(hm(600, 600, 500, 1000))
+console.log(x);
+console.log('hh'+ typeof null);
+
+let a="k";
+let b=a;
+let c="l";
+console.log(c)
+

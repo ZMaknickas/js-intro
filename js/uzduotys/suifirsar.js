@@ -1,6 +1,7 @@
-/* Patikrinkite, ar sarase 
-[1, 2, 3, 4] yra skaicius 3
-*/
+// vardas Aidas;
+let vardas= 'Aidas';
+vardas.split('').reverse().join(',');
+console.log(vardas);
 
 a = [1, 2, 3, 4];
 for (let i= 0; i<a.length; i++)

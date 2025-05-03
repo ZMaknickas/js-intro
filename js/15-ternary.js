@@ -56,3 +56,9 @@ const c=2
         : 5 
     : 6;
 console.log(c);
+
+function boolToWord( bool ){
+    return bool ? 'Yes':'No';
+  }
+
+  let boolToWord = bool => bool ? 'Yes' : 'No';
