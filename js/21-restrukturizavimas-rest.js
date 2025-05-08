@@ -133,7 +133,8 @@ const ddd= [1,2,3];
 console.log(Math.min(...ddd));
 
 function min(...list) { //parasome array vienu zodziu.
-let min =
-
-return min;
+let better=[1,2,3,'a','b']
+let mju=better.concat([...list])
+return mju;
 }
+console.log(min('c', 'd', 4,5,6))

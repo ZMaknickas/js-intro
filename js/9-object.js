@@ -44,9 +44,13 @@ const studentas = {
     [
         {vardas: 'Jonas',
         age : 57}, 
-        {vardas: Ona,
+        {vardas: 'Ona',
          age: 66,   
         }
     ]   
  
 }
+
+let obj={name:"Alice"};
+let newObj=obj;
+newObj.name='bob';
